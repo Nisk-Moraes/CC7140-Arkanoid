@@ -7,9 +7,11 @@ public class VidaJogador : MonoBehaviour
     // Start is called before the first frame update
     public int vidaPlayer = 3;
     public int vidaAtual;
+    GameObject theBall;
     //public bool alive = true;
     void Start()
     {
+        theBall = GameObject.FindGameObjectWithTag("Ball");
         vidaAtual = vidaPlayer;
     }
 
@@ -23,7 +25,7 @@ public class VidaJogador : MonoBehaviour
         vidaAtual -= 1;
 
         if(vidaAtual <= 0){
-            //alive = false;
+            theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
             Debug.Log("Game over");
         }
     }
