@@ -3531,6 +3531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layout: {fileID: 11400000, guid: f7f0b99c742209747820c8101abc7035, type: 2}
   LevelScore: 10
+  espera: 5
   proximonivel: lvl2
   sfxVenceuJogo: {fileID: 8300000, guid: c7450b05a2079e84ebd69f86479f06af, type: 3}
   audioController: {fileID: 1610322848}
